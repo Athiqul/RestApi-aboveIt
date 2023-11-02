@@ -89,11 +89,20 @@ class Services extends ResourceController
             ],
 
             "title" => [
-                "rules" => "required|min_length[3]|alpha_numeric_space",
+                "rules" => "required|min_length[3]",
                 "errors" => [
                     "required" => "Service Title Missing",
                     "min_length[3]" => "Service title Should be minimum 3 characters",
-                    "alpha_space"=>"Only Alphabet,Numeric and space are Allowed"
+                  
+                ],
+            ],
+
+            "sub_title" => [
+                "rules" => "required|min_length[3]",
+                "errors" => [
+                    "required" => "Service Sub Title Missing",
+                    "min_length[3]" => "Service title Should be minimum 3 characters",
+                   
                 ],
             ],
             "image" => [
@@ -110,18 +119,18 @@ class Services extends ResourceController
             ],
 
             "meta_desc" => [
-                "rules" => "min_length[3]|alpha_numeric_space",
+                "rules" => "min_length[3]",
                 "errors" => [
                     "min_length[3]" => "Meta Desc Should be minimum 3 characters",
-                    "alpha_space"=>"Only Alphabet,Numeric and space are Allow"
+                    
                 ],
             ],
 
             "meta_tag" => [
-                "rules" => "min_length[3]|alpha_numeric_space",
+                "rules" => "min_length[3]",
                 "errors" => [
                     "min_length[3]" => "Meta Tag Should be minimum 3 characters",
-                    "alpha_space"=>"Only Alphabet,Numeric and space are Allow"
+                
                 ],
             ],
 

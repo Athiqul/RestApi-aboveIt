@@ -25,6 +25,11 @@ class Services extends Migration
                 "type"=>"VARCHAR",
                 "constraint"=>255,
             ],
+            "sub_title"=>[
+                "type"=>"VARCHAR",
+                "constraint"=>255,
+                "null"=>true
+            ],
             "image"=>[
                 "type"=>"VARCHAR",
                 "constraint"=>255,

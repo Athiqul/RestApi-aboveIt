@@ -14,7 +14,7 @@ class ServicesModel extends Model
     protected $returnType       = \App\Entities\ServicesEntity::class;
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["user_id","title","image","desc","meta_desc","meta_tag","status"];
+    protected $allowedFields    = ["user_id","title","sub_title","image","desc","meta_desc","meta_tag","status"];
 
     // Dates
     protected $useTimestamps = true;
