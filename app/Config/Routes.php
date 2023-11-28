@@ -54,6 +54,9 @@ $routes->post('/user-auth-otp','OtpVerify::otpVerify');
 //Blog Category create
 //$routes->get('/category-blog/(:num)','Blog::categoryBlog/$1');
 
+//Searching all
+$routes->get('/search','Search::index');
+
 $routes->group('blog',function($routes) {
   
     $routes->post('add-category','BlogCategory::create',['filter'=>'auth']);
